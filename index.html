@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
@@ -17,7 +17,59 @@
 	<!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" data-integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" data-crossorigin="anonymous">
 </head>
-	<body>
-		<a href="/test.html">测试跳转</a>
-	</body>
+
+<body>
+<div class='container-fluid'>
+	<!-- 导航 -->
+	<div id="nav" class="navbar navbar-inverse" role="navigation">
+		<div class='navbar-header'>
+			<button type='button' class='navbar-toggle' data-toggle='collapse' data-target='#example-navbar-collapse'>
+				<span class='sr-only'>切换导航</span>
+				<span class='icon-bar'></span>
+				<span class='icon-bar'></span>
+				<span class='icon-bar'></span>
+			</button>
+		</div>
+		<div class='collapse navbar-collapse' id='example-navbar-collapse'>
+			<ul class='nav navbar-nav'>
+				<li id='nav_home' class='active'><a href='/'><span class='glyphicon glyphicon-home'></span>首页</a></li>
+				<li id='nav_book'><a href='/client/book'><span class='glyphicon glyphicon-book'></span>文库</a></li>
+				<li id='nav_know'><a href='/client/know'><span class='glyphicon glyphicon-tasks'></span>社区</a></li>
+				<li id='nav_message'><a href='/client/message'><span class='glyphicon glyphicon-envelope'></span>留言</a></li>
+				<li id='nav_setup' class='dropdown'>
+					<a href='#' class='dropdown-toggle' data-toggle='dropdown'>
+						<span class='glyphicon glyphicon-cog'></span>设置
+					</a>
+					<ul class='dropdown-menu'>
+						<li><a href='/client/changeTheme'>更换主题</a></li>
+						<li class='divider'></li>
+						<li><a href='/manage/index'>管理员入口</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<a href="test.html">测试跳转</a>
+</div>
+</body>
+
+<style type="text/css">
+.container-fluid{
+	padding-right: 0px;
+	padding-left: 0px;
+}
+/* nav */
+#nav .navbar-toggle {
+	border: none;
+}
+#nav span {
+	margin-right: 5px;
+}
+#nav ul li a {
+	text-align:center;
+	font-size: 15px;
+	font-weight: 600;
+}
+</style>
+
 </html>

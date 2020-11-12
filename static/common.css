@@ -5,6 +5,12 @@ html, body{
 	margin: 0 auto;
 	padding:0;
 }
+
+.container-fluid{
+    padding-right: 0px;
+	padding-left: 0px;
+}
+
 a:hover{
 	color:red;
 	text-decoration:underline;

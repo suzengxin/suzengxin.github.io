@@ -1,4 +1,4 @@
-html, body{
+html, body {
 	font-family: 'Raleway', sans-serif;
 	font-size: 100%;
 	background: #FFf;
@@ -6,15 +6,20 @@ html, body{
 	padding:0;
 }
 
-.container-fluid{
+.container-fluid {
     padding-right: 0px;
 	padding-left: 0px;
 }
 
-a:hover{
+.row {
+	margin: 0px;
+}
+
+a:hover {
 	color:red;
 	text-decoration:underline;
 }
+
 /* nav */
 #nav .navbar-toggle {
 	border: none;
@@ -31,15 +36,17 @@ a:hover{
 }
 
 /* logo */
-#logo h1 a{
+#logo h1 a {
 	font-size: 1em;
 	color: #5bb2fc;
 	font-family: 'Fugaz One', cursive;
 }
-#logo h1 a span{
+
+#logo h1 a span {
 	color: #fec63f;
 }
-#logo h1 a:hover{
+
+#logo h1 a:hover {
 	text-decoration: none;
 }
 
@@ -50,7 +57,8 @@ a:hover{
     padding: 2em 0 1em;
 	text-align:left;
 }
-.footer-grids h3{
+
+.footer-grids h3 {
 	color: #fec63f;
 	font-size: 1.4em;
 	font-weight: 400;
@@ -59,14 +67,17 @@ a:hover{
 	font-family: 'Fugaz One', cursive;
 	margin:0.6em 0;
 }
+
 .footer-grids p {
 	font-size: 0.9em;
 	color: #fff;
 	line-height: 1.8em;
 }
+
 .footer-text {
 	float: left;
 }
+
 .footer-info {
   float: right;
 }

@@ -163,7 +163,7 @@ function changeColor (value) {
  * <div id="nav" class="navbar navbar-inverse" role="navigation"></div>
  **/
 function nav () {
-	$("#nav").append(
+	$("#nav1").append(
 		"<div class='container-fluid'>" +
 			"<div class='navbar-header'>" +
 				"<button type='button' class='navbar-toggle' data-toggle='collapse' data-target='#example-navbar-collapse'>" +

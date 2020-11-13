@@ -22,83 +22,46 @@
 </head>
 
 <body>
-<div class='container-fluid'>
+<div class="container-fluid">
 	<!-- 导航 -->
-	<div id="nav" class="navbar navbar-inverse" role="navigation" style="margin: 0px;"></div>
-	<div class="row">
-		<div class="col-sm-2">
-			<div class="container-fluid">
-				<div class="jumbotron">
-					<img src="images/photo.jpg" class="img-circle img-responsive" alt="Loading...">
-					<h5 class="text-center">陌上颜如玉 公子世无双</h5>
-     
-					<ul class="nav nav-stacked nav-pills">
-						<li class="active text-center"><a data-toggle="tab" href="#home">首页</a></li>
-						<li class="text-center"><a data-toggle="tab" href="#menu1">菜单 1</a></li>
-						<li class="text-center"><a data-toggle="tab" href="#menu2">菜单 2</a></li>
-						<li class="text-center"><a data-toggle="tab" href="#menu3">菜单 3</a></li>
-					</ul>
-				</div>
+	<div id="nav" class="navbar navbar-inverse" role="navigation" style="margin: 0px;">
+		<div class='container-fluid'>
+			<div class='navbar-header'>
+				<button type='button' class='navbar-toggle' data-toggle='collapse' data-target='#example-navbar-collapse'>
+					<span class='sr-only'>切换导航</span>
+					<span class='icon-bar'></span>
+					<span class='icon-bar'></span>
+					<span class='icon-bar'></span>
+				</button>
+			</div>
+			<div class='collapse navbar-collapse' id='example-navbar-collapse'>
+				<ul class='nav navbar-nav'>
+					<li id='nav_home' class='active'><a href='/'><span class='glyphicon glyphicon-home'></span>首页</a></li>
+					<li id='nav_book'><a href='#' onclick="test()"><span class='glyphicon glyphicon-book'></span>文库</a></li>
+					<li id='nav_know'><a><span class='glyphicon glyphicon-tasks'></span>社区</a></li>
+					<li id='nav_message'><a><span class='glyphicon glyphicon-envelope'></span>留言</a></li>
+					<li id='nav_setup' class='dropdown'>
+						<a href='#' class='dropdown-toggle' data-toggle='dropdown'>
+							<span class='glyphicon glyphicon-cog'></span>设置
+						</a>
+						<ul class='dropdown-menu'>
+							<li><a href='/client/changeTheme'>更换主题</a></li>
+							<li class='divider'></li>
+							<li><a href='/manage/index'>管理员入口</a></li>
+						</ul>
+					</li>
+				</ul>
 			</div>
 		</div>
-        
-        
-        
-        <div class="col-sm-10" style="box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
-            <h3 class="text-center">第二列</h3>
-            <div class="row" style="background-color: #dedef8;">
-                <div class="col-sm-3" style="background-color: #B18904; box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
-                    <p>
-                        Consectetur art party Tonx culpa semiotics. Pinterest assumenda minim organic quis.
-                    </p>
-                </div>
-                <div class="col-sm-3" style="background-color: #B18904; box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
-                    <p>
-                         sed do eiusmod tempor incididunt ut labore et dolore magna 
-        aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-        ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                </div>
-            
-                <div class="col-sm-3" style="background-color: #B18904; box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
-                    <p>
-                        quis nostrud exercitation ullamco laboris nisi ut 
-        aliquip ex ea commodo consequat.
-                    </p>
-                </div>
-                <div class="col-sm-3" style="background-color: #B18904; box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-        sed do eiusmod tempor incididunt ut labore et dolore magna 
-        aliqua. Ut enim ad minim.
-                    </p>
-                </div>
-            </div>
-        	<div class="row">
-        		 <div class="tab-content">
-				    <div id="home" class="tab-pane fade in active">
-				      <h3>首页</h3>
-				      <p>菜鸟教程 —— 学的不仅是技术，更是梦想！！！</p>
-				    </div>
-				    <div id="menu1" class="tab-pane fade">
-				      <h3>菜单 1</h3>
-				      <p>这是菜单 1 显示的内容。这是菜单 1 显示的内容。这是菜单 1 显示的内容。</p>
-				    </div>
-				    <div id="menu2" class="tab-pane fade">
-				      <h3>菜单 2</h3>
-				      <p>这是菜单 2 显示的内容。这是菜单 2 显示的内容。这是菜单 2 显示的内容。</p>
-				    </div>
-				    <div id="menu3" class="tab-pane fade">
-				      <h3>菜单 3</h3>
-				      <p>这是菜单 3 显示的内容。这是菜单 3 显示的内容。这是菜单 3 显示的内容。</p>
-				    </div>
-				  </div>
-        	</div>
-        </div>
-    </div>
+	</div>
+
+	<div class="row" style="background-color: #B18904;">
+		<iframe id="iframe" src="http://www.tianlangcloud.com" class="col-xs-12">
+			<p>您的浏览器不支持  iframe 标签。</p>
+		</iframe>
+	</div>
     
-	<!--footer--->
-	<div id="footer" class="footer text-center"></div>
+	
 </div>
 
 </body>
@@ -106,6 +69,18 @@
 	$(function(){
 		$("#nav_home").removeClass();
 		$("#nav_home").addClass("active");
+		var w = document.documentElement.clientWidth;
+	    var h = document.documentElement.clientHeight;
+	   	var iframe = document.getElementById("iframe");
+		var height = h-60;
+		iframe.setAttribute("style","height: "+height+"px;");
 	})
+
+	function test(){
+		var iframe = document.getElementById("iframe");
+	   	iframe.setAttribute("src","https://www.tianlangcloud.com");
+	   	$("#nav_home").removeClass();
+		$("#nav_book").addClass("active");
+	}
 </script>
 </html>

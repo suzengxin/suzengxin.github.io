@@ -44,7 +44,7 @@
 	    }else if(window.XMLHttpRequest){//判断是否是Netscape等其他支持XMLHttpRequest组件的浏览器
 	        http = new XMLHttpRequest();//创建其他浏览器上的XMLHttpRequest对象
 	    }
-		http.open('GET', 'http://suzengxin.github.io/txt/任务.txt', true);
+		http.open('GET', 'http://suzengxin.github.io/txt/renwu.txt', true);
 		http.onload = function () {
 			document.getElementById("content").innerHTML = http.responseText;
 		};

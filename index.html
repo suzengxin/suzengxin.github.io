@@ -36,18 +36,16 @@
 			</div>
 			<div class='collapse navbar-collapse' id='example-navbar-collapse'>
 				<ul class='nav navbar-nav'>
-					<li id='nav_home' class='active'><a href='/'><span class='glyphicon glyphicon-home'></span>首页</a></li>
-					<li id='nav_book'><a href='#' onclick="test()"><span class='glyphicon glyphicon-book'></span>文库</a></li>
-					<li id='nav_know'><a href='#'><span class='glyphicon glyphicon-tasks'></span>社区</a></li>
-					<li id='nav_message'><a href='#'><span class='glyphicon glyphicon-envelope'></span>留言</a></li>
+					<li id='nav_home' class='active'><a href='index.html'><span class='glyphicon glyphicon-home'></span>首页</a></li>
+					<li id='nav_book'><a href='#' onclick="book()"><span class='glyphicon glyphicon-book'></span>文库</a></li>
 					<li id='nav_setup' class='dropdown'>
 						<a href='#' class='dropdown-toggle' data-toggle='dropdown'>
 							<span class='glyphicon glyphicon-cog'></span>设置
 						</a>
 						<ul class='dropdown-menu'>
-							<li><a href='#' href='/client/changeTheme'>更换主题</a></li>
+							<li><a href='#' href='#'>更换主题</a></li>
 							<li class='divider'></li>
-							<li><a href='#' href='/manage/index'>管理员入口</a></li>
+							<li><a href='#' href='#'>更多功能开发中...</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -66,7 +64,7 @@
 		</div>
 	
 		<div class="col-lg-10 col-md-12">
-			<iframe id="iframe" src="http://www.tianlangcloud.com" class="col-xs-12">
+			<iframe id="iframe" src="html/index.html" class="col-xs-12">
 				<p>您的浏览器不支持  iframe 标签。</p>
 			</iframe>
 		</div>
@@ -83,11 +81,16 @@
 		var height = h-52;
 		iframe.setAttribute("style","height: "+height+"px;");
 	})
+	
+	function removeNavActive() {
+		$("#nav_home").removeClass();
+		$("#nav_book").removeClass();
+	}
 
-	function test(){
+	function book(){
 		var iframe = document.getElementById("iframe");
-	   	iframe.setAttribute("src","https://www.tianlangcloud.com");
-	   	$("#nav_home").removeClass();
+	   	iframe.setAttribute("src", "html/book_index.html");
+	   	removeNavActive();
 		$("#nav_book").addClass("active");
 	}
 </script>

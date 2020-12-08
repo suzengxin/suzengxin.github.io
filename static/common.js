@@ -176,7 +176,7 @@ function nav () {
 			"<div class='collapse navbar-collapse' id='example-navbar-collapse'>" +
 				"<ul class='nav navbar-nav'>" +
 					"<li id='nav_home' class='active'><a href='/'><span class='glyphicon glyphicon-home'></span>首页</a></li>" +
-					"<li id='nav_music'><a href='/music'><span class='glyphicon glyphicon-envelope'></span>音乐</a></li>" +
+					"<li id='nav_music'><a href='/music'><span class='glyphicon glyphicon-music'></span>音乐</a></li>" +
 					"<li id='nav_setup' class='dropdown'>" +
 						"<a href='#' class='dropdown-toggle' data-toggle='dropdown'>" +
 							"<span class='glyphicon glyphicon-cog'></span>设置" +

@@ -28,21 +28,21 @@ a:hover {
 }
 
 /* nav */
-#nav .navbar-toggle {
+#nav_load .navbar-toggle {
 	border: none;
 }
 
-#nav span {
+#nav_load span {
 	margin-right: 5px;
 }
 
-#nav ul li a {
+#nav_load ul li a {
 	text-align:center;
 	font-size: 15px;
 	font-weight: 600;
 }
 
-#nav ul li p {
+#nav_load ul li p {
 	text-align:center;
 	font-size: 15px;
 	font-weight: 600;
@@ -64,7 +64,7 @@ a:hover {
 }
 
 /*--footer--*/
-.footer {
+.footer_load {
 	width:100%;
 	background: #29292A;
     padding: 2em 0 1em;

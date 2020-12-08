@@ -240,3 +240,11 @@ function getCookieValue(cookieName){
 	return ""
 }
 
+/**
+ * 去除导航中的class
+ */
+function removeNavActive() {
+	$("#nav_home").removeClass();
+	$("#nav_music").removeClass();
+}
+

@@ -160,10 +160,10 @@ function changeColor (value) {
  * 使用方法，在html中加入下面的标签，
  * 加入<script type="text/javascript">$(function(){nav()});</script>
  * <!-- 导航 -->
- * <div id="nav" class="navbar navbar-inverse" role="navigation"></div>
+ * <div id="nav_load" class="navbar navbar-inverse" role="navigation"></div>
  **/
 function nav () {
-	$("#nav1").append(
+	$("#nav_load").append(
 		"<div class='container-fluid'>" +
 			"<div class='navbar-header'>" +
 				"<button type='button' class='navbar-toggle' data-toggle='collapse' data-target='#example-navbar-collapse'>" +
@@ -176,17 +176,15 @@ function nav () {
 			"<div class='collapse navbar-collapse' id='example-navbar-collapse'>" +
 				"<ul class='nav navbar-nav'>" +
 					"<li id='nav_home' class='active'><a href='/'><span class='glyphicon glyphicon-home'></span>首页</a></li>" +
-					"<li id='nav_book'><a href='/client/book'><span class='glyphicon glyphicon-book'></span>文库</a></li>" +
-					"<li id='nav_know'><a href='/client/know'><span class='glyphicon glyphicon-tasks'></span>社区</a></li>" +
-					"<li id='nav_message'><a href='/client/message'><span class='glyphicon glyphicon-envelope'></span>留言</a></li>" +
+					"<li id='nav_music'><a href='/music'><span class='glyphicon glyphicon-envelope'></span>音乐</a></li>" +
 					"<li id='nav_setup' class='dropdown'>" +
 						"<a href='#' class='dropdown-toggle' data-toggle='dropdown'>" +
 							"<span class='glyphicon glyphicon-cog'></span>设置" +
 						"</a>" +
 						"<ul class='dropdown-menu'>" +
-							"<li><a href='/client/changeTheme'>更换主题</a></li>" +
+							"<li><a href='http://www.tianlangcloud.com:8080' target='_blank'><span class='glyphicon glyphicon-hdd'></span>网盘</a></li>" +
 							"<li class='divider'></li>" +
-							"<li><a href='/manage/index'>管理员入口</a></li>" +
+							"<li><a href='#'>更多功能开发中...</a></li>" +
 						"</ul>" +
 					"</li>" +
 				"</ul>" +
@@ -198,10 +196,10 @@ function nav () {
  * 使用方法，在html中加入下面的标签，
  * 加入<script type="text/javascript">$(function(){footer()});</script>
  * <!--footer--->
- * <div id="footer" class="footer text-center"></div>
+ * <div id="footer_load" class="footer text-center"></div>
  **/
 function footer () {
-	$("#footer").append(
+	$("#footer_load").append(
 		"<div class='container'>"+
 			"<div class='footer-grids'>"+
 				"<div class='col-md-6 footer-text'>"+  

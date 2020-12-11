@@ -184,7 +184,8 @@ function nav () {
 						"</a>" +
 						"<ul class='dropdown-menu'>" +
 							"<li><a href='http://www.tianlangcloud.com:8080/#/login' target='_blank'>网盘设置</a></li>" +
-							"<li><a href='http://www.tianlangcloud.com:8080/console' target='_blank'>数据设置</a></li>" +
+							"<li class='divider'></li>" +
+							"<li><a href='http://www.tianlangcloud.com:8080/file/console' target='_blank'>数据设置</a></li>" +
 							"<li class='divider'></li>" +
 							"<li><a href='#'>更多功能开发中...</a></li>" +
 						"</ul>" +
@@ -217,7 +218,7 @@ function footer () {
 				"</div>"+
 				"<div class='col-xs-12 col-sm-6 footer-info'>"+
 					"<h3>联系我</h3>"+
-					"<p>如果有疑问，请您邮件我！如果有疑问，请您邮件我！如果有疑问，请您邮件我！如果有疑问，请您邮件我！如果有疑问，请您邮件我！如果有疑问，请您邮件我！如果有疑问，请您邮件我！如果有疑问，请您邮件我！如果有疑问，请您邮件我！</p>"+
+					"<p>如果您对我的网站有什么好的建议或者有什么疑问，请您邮件联系我！</p>"+
 					"<div class='support'>"+
 					   "<h3>备案：<span style='color: white;font-size: 16px;'>京ICP备18041428号-1</span></h3>"+
 					   "<h3>邮箱：<span style='color: white;font-size: 18px;'>suzengxin@foxmail.com</span></h3>"+

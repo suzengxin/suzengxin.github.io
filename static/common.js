@@ -204,7 +204,7 @@ function footer () {
 	$("#footer_load").append(
 		"<div class='container'>"+
 			"<div class='footer-grids'>"+
-				"<div class='col-md-6 footer-text'>"+  
+				"<div class='col-xs-12 col-sm-6 footer-text'>"+  
 					"<h3>关于我</h3>"+
 					"<p>本网站仅是我学习的记录，有一些比较好用的技能</p>"+
 					"<p>我将这些技能记录了下来，留作备用，并且分享给大家</p>"+
@@ -212,11 +212,12 @@ function footer () {
 					"<h3>导航：<span style='color: white;font-size: 20px;'>"+
 						"<a class='label label-primary' href='/'>首页</a>"+
 						"<a class='label label-primary' href='/music'>音乐</a>"+
+						"<a class='label label-primary' href='http://www.tianlangcloud.com:8080' target='_blank'>网盘</a>"+
 					"</span></h3>"+
 				"</div>"+
-				"<div class='col-md-6 footer-info'>"+
+				"<div class='col-xs-12 col-sm-6 footer-info'>"+
 					"<h3>联系我</h3>"+
-					"<p>如果有疑问，请您邮件我！</p>"+
+					"<p>如果有疑问，请您邮件我！如果有疑问，请您邮件我！如果有疑问，请您邮件我！如果有疑问，请您邮件我！如果有疑问，请您邮件我！如果有疑问，请您邮件我！如果有疑问，请您邮件我！如果有疑问，请您邮件我！如果有疑问，请您邮件我！</p>"+
 					"<div class='support'>"+
 					   "<h3>备案：<span style='color: white;font-size: 16px;'>京ICP备18041428号-1</span></h3>"+
 					   "<h3>邮箱：<span style='color: white;font-size: 18px;'>suzengxin@foxmail.com</span></h3>"+

@@ -177,12 +177,14 @@ function nav () {
 				"<ul class='nav navbar-nav'>" +
 					"<li id='nav_home' class='active'><a href='/'><span class='glyphicon glyphicon-home'></span>首页</a></li>" +
 					"<li id='nav_music'><a href='/music'><span class='glyphicon glyphicon-music'></span>音乐</a></li>" +
+					"<li id='file'><a href='http://www.tianlangcloud.com:8080' target='_blank'><span class='glyphicon glyphicon-hdd'></span>网盘</a></li>" +
 					"<li id='nav_setup' class='dropdown'>" +
 						"<a href='#' class='dropdown-toggle' data-toggle='dropdown'>" +
 							"<span class='glyphicon glyphicon-cog'></span>设置" +
 						"</a>" +
 						"<ul class='dropdown-menu'>" +
-							"<li><a href='http://www.tianlangcloud.com:8080' target='_blank'><span class='glyphicon glyphicon-hdd'></span>网盘</a></li>" +
+							"<li><a href='http://www.tianlangcloud.com:8080/#/login' target='_blank'>网盘设置</a></li>" +
+							"<li><a href='http://www.tianlangcloud.com:8080/console' target='_blank'>数据设置</a></li>" +
 							"<li class='divider'></li>" +
 							"<li><a href='#'>更多功能开发中...</a></li>" +
 						"</ul>" +
@@ -204,16 +206,17 @@ function footer () {
 			"<div class='footer-grids'>"+
 				"<div class='col-md-6 footer-text'>"+  
 					"<h3>关于我</h3>"+
-					"<p>本网站是我学习的记录，有一些比较好用的技能</p>"+
+					"<p>本网站仅是我学习的记录，有一些比较好用的技能</p>"+
 					"<p>我将这些技能记录了下来，留作备用，并且分享给大家</p>"+
 					"<p>如果本站侵犯了您的权益请联系本站，本站会立即删除</p>"+
 					"<h3>导航：<span style='color: white;font-size: 20px;'>"+
 						"<a class='label label-primary' href='/'>首页</a>"+
+						"<a class='label label-primary' href='/music'>音乐</a>"+
 					"</span></h3>"+
 				"</div>"+
 				"<div class='col-md-6 footer-info'>"+
 					"<h3>联系我</h3>"+
-					"<p>如果您发现本网站没有，您恰好有的资源，请您邮件我，从而达到资源共享，最后每个人都能找到自己需要的东西，并且本网站也会把您记录下来，在页面展示您在什么时间，共享了什么资源！</p>"+
+					"<p>如果有疑问，请您邮件我！</p>"+
 					"<div class='support'>"+
 					   "<h3>备案：<span style='color: white;font-size: 16px;'>京ICP备18041428号-1</span></h3>"+
 					   "<h3>邮箱：<span style='color: white;font-size: 18px;'>suzengxin@foxmail.com</span></h3>"+

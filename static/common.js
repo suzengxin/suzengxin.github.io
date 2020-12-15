@@ -5,6 +5,31 @@ $(function(){
 });
 
 /**
+ * 去除导航中的class
+ */
+function removeNavActive() {
+	$("#nav_home").removeClass();
+	$("#nav_music").removeClass();
+	$("#nav_file").removeClass();
+}
+
+/**
+ * 根据cookie name获取value
+ **/
+function getCookieValue(cookieName){
+	if (document.cookie.length>0){
+		c_start=document.cookie.indexOf(cookieName + "=")
+		if (c_start!=-1){ 
+			c_start=c_start + cookieName.length+1 
+			c_end=document.cookie.indexOf(";",c_start)
+		if (c_end==-1) c_end=document.cookie.length
+			return unescape(document.cookie.substring(c_start,c_end))
+		} 
+	}
+	return ""
+}
+
+/**
  * 加载主题
  */
 function loadTheme(){
@@ -23,10 +48,10 @@ function loadTheme(){
 		$("body").css("background-color",value);
 		$("body").css("color","black");
 	}else if (value == "tectile" || value == "cloth") {
-		$("body").css("background-image","url('/images/theme/"+value+".png')");
+		$("body").css("background-image","url('https://suzengxin.github.io/images/theme/"+value+".png')");
 		$("body").css("color","white");
 	} else {
-		$("body").css("background-image","url('/images/theme/"+value+".jpg')");
+		$("body").css("background-image","url('https://suzengxin.github.io/images/theme/"+value+".jpg')");
 		$("body").css("color","white");
 	}
 	
@@ -56,11 +81,11 @@ function changeToTheme (value) {
 		$("body").css("background-color",value);
 	}else if (value == "tectile" || value == "cloth") {
 		$("body").css("background-color","none");
-		$("body").css("background-image","url('/images/theme/"+value+".png')");
+		$("body").css("background-image","url('https://suzengxin.github.io/images/theme/"+value+".png')");
 		$("body").css("color","white");
 	} else {
 		$("body").css("background-color","none");
-		$("body").css("background-image","url('/images/theme/"+value+".jpg')");
+		$("body").css("background-image","url('https://suzengxin.github.io/images/theme/"+value+".jpg')");
 		$("body").css("color","white");
 	}
 }
@@ -183,6 +208,8 @@ function nav () {
 							"<span class='glyphicon glyphicon-cog'></span>设置" +
 						"</a>" +
 						"<ul class='dropdown-menu'>" +
+							"<li><a href='/theme'>背景设置</a></li>" +
+							"<li class='divider'></li>" +
 							"<li><a href='http://www.tianlangcloud.com:8080/#/login' target='_blank'>网盘设置</a></li>" +
 							"<li class='divider'></li>" +
 							"<li><a href='http://www.tianlangcloud.com:8080/file/console' target='_blank'>数据设置</a></li>" +
@@ -228,29 +255,3 @@ function footer () {
 			"</div>"+
 		"</div>");
 }
-
-/**
- * 根据cookie name获取value
- **/
-function getCookieValue(cookieName){
-	if (document.cookie.length>0){
-		c_start=document.cookie.indexOf(cookieName + "=")
-		if (c_start!=-1){ 
-			c_start=c_start + cookieName.length+1 
-			c_end=document.cookie.indexOf(";",c_start)
-		if (c_end==-1) c_end=document.cookie.length
-			return unescape(document.cookie.substring(c_start,c_end))
-		} 
-	}
-	return ""
-}
-
-/**
- * 去除导航中的class
- */
-function removeNavActive() {
-	$("#nav_home").removeClass();
-	$("#nav_music").removeClass();
-	$("#nav_file").removeClass();
-}
-

@@ -43,13 +43,10 @@ function loadTheme(){
 	if (value == "white") {
 		$("body").css("background-color",value);
 		$("body").css("color","black");
-	}else if (value.indexOf("_")!=-1) {
+	} else if (value.indexOf("_")!=-1) {
 		value = value.replace("_",'#');
 		$("body").css("background-color",value);
 		$("body").css("color","black");
-	}else if (value == "tectile" || value == "cloth") {
-		$("body").css("background-image","url('https://suzengxin.github.io/images/theme/"+value+".png')");
-		$("body").css("color","white");
 	} else {
 		$("body").css("background-image","url('https://suzengxin.github.io/images/theme/"+value+".jpg')");
 		$("body").css("color","white");
@@ -70,19 +67,14 @@ function changeToTheme (value) {
 	var time = date.toGMTString();
 	//修改cookies
 	document.cookie = "theme=" + value + "; expires=" + time;
-	
 	if (value == "white") {
 		$("body").css("background-image","none");
 		$("body").css("background-color",value);
 		$("body").css("color","black");
-	}else if (value.indexOf("_")!=-1) {
+	} else if (value.indexOf("_")!=-1) {
 		value = value.replace("_",'#');
 		$("body").css("background-image","none");
 		$("body").css("background-color",value);
-	}else if (value == "tectile" || value == "cloth") {
-		$("body").css("background-color","none");
-		$("body").css("background-image","url('https://suzengxin.github.io/images/theme/"+value+".png')");
-		$("body").css("color","white");
 	} else {
 		$("body").css("background-color","none");
 		$("body").css("background-image","url('https://suzengxin.github.io/images/theme/"+value+".jpg')");

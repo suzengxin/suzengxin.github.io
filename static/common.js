@@ -11,6 +11,7 @@ function removeNavActive() {
 	$("#nav_home").removeClass();
 	$("#nav_music").removeClass();
 	$("#nav_file").removeClass();
+	$("#nav_book").removeClass();
 }
 
 /**
@@ -187,6 +188,7 @@ function nav () {
 				"<ul class='nav navbar-nav'>" +
 					"<li id='nav_home' class='active'><a href='/'><span class='glyphicon glyphicon-home'></span>首页</a></li>" +
 					"<li id='nav_music'><a href='/music'><span class='glyphicon glyphicon-music'></span>音乐</a></li>" +
+					"<li id='nav_book'><a href='/book'><span class='glyphicon glyphicon-book'></span>书籍</a></li>" +
 					"<li id='nav_file'><a href='http://www.tianlangcloud.com:8080' target='_blank'><span class='glyphicon glyphicon-hdd'></span>网盘</a></li>" +
 					"<li id='nav_setup' class='dropdown'>" +
 						"<a href='#' class='dropdown-toggle' data-toggle='dropdown'>" +
@@ -225,6 +227,7 @@ function footer () {
 					"<h3>导航：<span style='color: white;font-size: 20px;'>"+
 						"<a class='label label-primary' href='/'>首页</a>"+
 						"<a class='label label-primary' href='/music'>音乐</a>"+
+						"<a class='label label-primary' href='/book'>书籍</a>"+
 						"<a class='label label-primary' href='http://www.tianlangcloud.com:8080' target='_blank'>网盘</a>"+
 					"</span></h3>"+
 				"</div>"+

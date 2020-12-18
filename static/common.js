@@ -195,6 +195,8 @@ function nav () {
 							"<span class='glyphicon glyphicon-cog'></span>设置" +
 						"</a>" +
 						"<ul class='dropdown-menu'>" +
+							"<li><a href='/config_book'>书籍设置</a></li>" +
+							"<li class='divider'></li>" +
 							"<li><a href='/theme'>背景设置</a></li>" +
 							"<li class='divider'></li>" +
 							"<li><a href='http://www.tianlangcloud.com:8080/#/login' target='_blank'>网盘设置</a></li>" +

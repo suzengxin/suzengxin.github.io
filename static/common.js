@@ -195,7 +195,7 @@ function nav () {
 							"<span class='glyphicon glyphicon-cog'></span>设置" +
 						"</a>" +
 						"<ul class='dropdown-menu'>" +
-							"<li><a href='/config'>服务管理</a></li>" +
+							"<li><a href='/config'>系统设置</a></li>" +
 							"<li class='divider'></li>" +
 							"<li><a href='/theme'>背景设置</a></li>" +
 							"<li class='divider'></li>" +

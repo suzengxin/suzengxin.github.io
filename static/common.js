@@ -10,8 +10,8 @@ $(function(){
 function removeNavActive() {
 	$("#nav_home").removeClass();
 	$("#nav_music").removeClass();
-	$("#nav_file").removeClass();
 	$("#nav_book").removeClass();
+	$("#nav_file").removeClass();
 }
 
 /**
@@ -195,6 +195,8 @@ function nav () {
 							"<span class='glyphicon glyphicon-cog'></span>设置" +
 						"</a>" +
 						"<ul class='dropdown-menu'>" +
+							"<li><a href='https://github.com/suzengxin' target='_blank'>GitHub</a></li>" +
+							"<li class='divider'></li>" +
 							"<li><a href='/config'>系统设置</a></li>" +
 							"<li class='divider'></li>" +
 							"<li><a href='/theme'>背景设置</a></li>" +

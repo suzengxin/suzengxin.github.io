@@ -197,6 +197,8 @@ function nav () {
 						"<ul class='dropdown-menu'>" +
 							"<li><a href='https://github.com/suzengxin' target='_blank'>GitHub</a></li>" +
 							"<li class='divider'></li>" +
+							"<li><a href='https://suzengxin.github.io' target='_blank'>我的主页</a></li>" +
+							"<li class='divider'></li>" +
 							"<li><a href='/config'>系统设置</a></li>" +
 							"<li class='divider'></li>" +
 							"<li><a href='/theme'>背景设置</a></li>" +

@@ -187,6 +187,7 @@ function nav () {
 			"<div class='collapse navbar-collapse' id='example-navbar-collapse'>" +
 				"<ul class='nav navbar-nav'>" +
 					"<li id='nav_home' class='active'><a href='/'><span class='glyphicon glyphicon-home'></span>首页</a></li>" +
+					"<li id='nav_user'><a href='https://suzengxin.github.io' target='_blank'><span class='glyphicon glyphicon-user'></span>主页</a></li>" +
 					"<li id='nav_music'><a href='/music'><span class='glyphicon glyphicon-music'></span>音乐</a></li>" +
 					"<li id='nav_book'><a href='/book'><span class='glyphicon glyphicon-book'></span>书籍</a></li>" +
 					"<li id='nav_file'><a href='http://www.tianlangcloud.com:8080' target='_blank'><span class='glyphicon glyphicon-hdd'></span>网盘</a></li>" +
@@ -196,8 +197,6 @@ function nav () {
 						"</a>" +
 						"<ul class='dropdown-menu'>" +
 							"<li><a href='https://github.com/suzengxin' target='_blank'>GitHub</a></li>" +
-							"<li class='divider'></li>" +
-							"<li><a href='https://suzengxin.github.io' target='_blank'>我的主页</a></li>" +
 							"<li class='divider'></li>" +
 							"<li><a href='/config'>系统设置</a></li>" +
 							"<li class='divider'></li>" +
